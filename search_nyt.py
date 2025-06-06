@@ -36,8 +36,8 @@ def display_results(search_results):
         return
 
     for doc in docs:
-            article_web_url = doc.get("web_url", "N/A") # Use .get for safer access
-            article_headline = doc.get("headline", {}).get("main", "No Headline") # Safer access for nested dict
+        article_web_url = doc.get("web_url", "N/A") # Use .get for safer access
+        article_headline = doc.get("headline", {}).get("main", "No Headline") # Safer access for nested dict
 
         print(f"{article_headline} ({article_web_url})") # Use f-string for cleaner formatting
 
